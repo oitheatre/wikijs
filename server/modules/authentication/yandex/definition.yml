@@ -1,0 +1,26 @@
+key: yandex
+title: Yandex
+description: Yandex authentication for oitheatre
+author: Vladislav Toigildin
+logo: https://static.requarks.io/logo/okta.svg
+color: blue darken-1
+website: https://yandex.ru/dev/oauth/doc/dg/concepts/about.html
+isAvailable: true
+useForm: false
+scopes:
+  - profile
+  - email
+  - openid
+props:
+  yandexClientId:
+    title: Client ID
+    type: String
+    hint: 20 chars alphanumeric string
+    maxWidth: 400
+    order: 2
+  yandexClientSecret:
+    title: Client Secret
+    type: String
+    hint: 40 chars alphanumeric string with a hyphen(s)
+    maxWidth: 600
+    order: 3
